@@ -14,7 +14,7 @@ resource "cloudflare_tunnel" "gke_tunnel" {
 # Not proxied, not accessible. Just a record for auto-created CNAMEs by external-dns.
 resource "cloudflare_record" "gke_tunnel" {
   zone_id = local.cloudflare_zone_id
-  name    = "gke-tunnel-origin.${var.cloudflare_zone}"
+  name    = "tunnel.${var.cloudflare_zone}"
   content   = "${cloudflare_tunnel.gke_tunnel.id}.cfargotunnel.com"
   type    = "CNAME"
   proxied = false
