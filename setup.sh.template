@@ -2,7 +2,7 @@
 
 # Set up environment variables for Terraform configuration
 export TF_VAR_gcp_project_id=
-export TF_VAR_cloudflare_account_id=
+export TF_VAR_account_id=
 export TF_VAR_cloudflare_zone=
 export TF_VAR_cloudflare_zone_id=
 export TF_VAR_cloudflare_api_token=

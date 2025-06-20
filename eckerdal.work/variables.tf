@@ -1,6 +1,5 @@
 variable "account_id" {
   type = string
-  default = "661de39146ce9c3c1567adf8418988b5" #johannes.eckerdal@gmail.com
 }
 
 variable "domain" {
@@ -68,5 +67,4 @@ variable "apikey_list" {
 
 variable "api_backend" {
   type = string
-  default = "httpbin-ogmoxoqezq-ey.a.run.app"
 }
